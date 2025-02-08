@@ -1,6 +1,6 @@
 # dashj-bls
 
-> A Java library for working with Dash
+> A Java library for working with BLS Signatures for Dash
 
 [![Tests](https://github.com/dashevo/dashj-bls/workflows/Java%20CI/badge.svg?branch=master)](https://github.com/dashevo/dashj-bls/actions)
 ![codecov](https://codecov.io/gh/dashevo/dashj-bls/branch/master/graph/badge.svg)
@@ -29,7 +29,6 @@ mvn clean package -Dmaven.javadoc.skip=true
 ```
 To perform a full build without building the bls shared library and skip the test:
 ```
-
 mvn clean package -Pno-build-bls -DskipTests -Dmaven.javadoc.skip=true
 ```
 To perform a full build and install it in the local maven repository:
