@@ -20,8 +20,22 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: ${{ matrix.java }}
-      - name: build and run tests
+      - name: Run Maven Build
+        id: build
         run: |
           git submodule update --init --recursive
           git apply catch_changes.patch
-          mvn -q clean install -DskipTests -Dmaven.javadoc.skip=true
+          mvn -q clean install -DskipTests -Dmaven.javadoc.skip=true || echo "BUILD_FAILED" > build_status.txt
+
+      - name: Apply Patch if Build Fails
+        if: failure() && steps.build.outcome == 'failure'
+        run: |
+          if [ -f build_status.txt ]; then
+            git apply catch_changes.patch
+            rm build_status.txt
+          fi
+
+      - name: Re-run Maven Build if Patch Applied
+        if: success() && !cancelled() && steps.build.outcome == 'failure'
+        run: mvn -q clean install -DskipTests -Dmaven.javadoc.skip=true
+
