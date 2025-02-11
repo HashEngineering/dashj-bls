@@ -104,14 +104,6 @@ public class G1Element {
 
   public byte[] serialize() { return DASHJBLSJNI.G1Element_serialize__SWIG_1(swigCPtr, this); }
 
-  public SWIGTYPE_p_std__arrayT_unsigned_char_48_t serializeToArray(boolean fLegacy) {
-    return new SWIGTYPE_p_std__arrayT_unsigned_char_48_t(DASHJBLSJNI.G1Element_serializeToArray__SWIG_0(swigCPtr, this, fLegacy), true);
-  }
-
-  public SWIGTYPE_p_std__arrayT_unsigned_char_48_t serializeToArray() {
-    return new SWIGTYPE_p_std__arrayT_unsigned_char_48_t(DASHJBLSJNI.G1Element_serializeToArray__SWIG_1(swigCPtr, this), true);
-  }
-
   public G1Element copy() {
     return new G1Element(DASHJBLSJNI.G1Element_copy(swigCPtr, this), true);
   }

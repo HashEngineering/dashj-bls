@@ -57,6 +57,13 @@ namespace bls {
   %rename ("$ignore", fullname=1) LegacySchemeMPL::AggregateVerify(const vector<G1Element>& pubkeys, const vector<Bytes>& messages, const G2Element& signature) override;
   %rename ("$ignore", fullname=1) PopSchemeMPL::FastAggregateVerify(const vector<Bytes>& pubkeys, const Bytes& message, const Bytes& signature);
 
+  %ignore PrivateKey::SerializeToArray(bool fLegacy) const;
+  %ignore PrivateKey::SerializeToArray() const;
+  %ignore G1Element::SerializeToArray(bool fLegacy) const;
+  %ignore G1Element::SerializeToArray() const;
+  %ignore G2Element::SerializeToArray(bool fLegacy) const;
+  %ignore G2Element::SerializeToArray() const;
+  %ignore GTElement::SerializeToArray() const;
   %ignore Threshold::PrivateKeyRecover(const std::vector<PrivateKey>& sks, const std::vector<Bytes>& ids);
   %ignore Threshold::PublicKeyRecover(const std::vector<G1Element>& sks, const std::vector<Bytes>& ids);
   %ignore Threshold::SignatureRecover(const std::vector<G2Element>& sigs, const std::vector<Bytes>& ids);

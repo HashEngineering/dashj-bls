@@ -66,9 +66,5 @@ public class GTElement {
 
   public byte[] serialize() { return DASHJBLSJNI.GTElement_serialize__SWIG_1(swigCPtr, this); }
 
-  public SWIGTYPE_p_std__arrayT_unsigned_char_384_t serializeToArray() {
-    return new SWIGTYPE_p_std__arrayT_unsigned_char_384_t(DASHJBLSJNI.GTElement_serializeToArray(swigCPtr, this), true);
-  }
-
   public final static int SIZE = DASHJBLSJNI.GTElement_SIZE_get();
 }

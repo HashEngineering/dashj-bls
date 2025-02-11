@@ -100,14 +100,6 @@ public class PrivateKey {
 
   public byte[] serialize() { return DASHJBLSJNI.PrivateKey_serialize__SWIG_2(swigCPtr, this); }
 
-  public SWIGTYPE_p_std__arrayT_unsigned_char_32_t serializeToArray(boolean fLegacy) {
-    return new SWIGTYPE_p_std__arrayT_unsigned_char_32_t(DASHJBLSJNI.PrivateKey_serializeToArray__SWIG_0(swigCPtr, this, fLegacy), true);
-  }
-
-  public SWIGTYPE_p_std__arrayT_unsigned_char_32_t serializeToArray() {
-    return new SWIGTYPE_p_std__arrayT_unsigned_char_32_t(DASHJBLSJNI.PrivateKey_serializeToArray__SWIG_1(swigCPtr, this), true);
-  }
-
   public G2Element signG2(byte[] msg, long len, byte[] dst, long dst_len, boolean fLegacy) {
     return new G2Element(DASHJBLSJNI.PrivateKey_signG2__SWIG_0(swigCPtr, this, msg, len, dst, dst_len, fLegacy), true);
   }

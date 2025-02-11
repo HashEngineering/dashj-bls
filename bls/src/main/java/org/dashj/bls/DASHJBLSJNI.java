@@ -118,8 +118,6 @@ public class DASHJBLSJNI {
   public final static native long G1Element_getFingerprint__SWIG_1(long jarg1, G1Element jarg1_);
   public final static native byte[] G1Element_serialize__SWIG_0(long jarg1, G1Element jarg1_, boolean jarg2);
   public final static native byte[] G1Element_serialize__SWIG_1(long jarg1, G1Element jarg1_);
-  public final static native long G1Element_serializeToArray__SWIG_0(long jarg1, G1Element jarg1_, boolean jarg2);
-  public final static native long G1Element_serializeToArray__SWIG_1(long jarg1, G1Element jarg1_);
   public final static native long G1Element_copy(long jarg1, G1Element jarg1_);
   public final static native boolean objectEquals__SWIG_1(long jarg1, G1Element jarg1_, long jarg2, G1Element jarg2_);
   public final static native long add__SWIG_0(long jarg1, G1Element jarg1_, long jarg2, G1Element jarg2_);
@@ -141,8 +139,6 @@ public class DASHJBLSJNI {
   public final static native long G2Element_pair(long jarg1, G2Element jarg1_, long jarg2, G1Element jarg2_);
   public final static native byte[] G2Element_serialize__SWIG_0(long jarg1, G2Element jarg1_, boolean jarg2);
   public final static native byte[] G2Element_serialize__SWIG_1(long jarg1, G2Element jarg1_);
-  public final static native long G2Element_serializeToArray__SWIG_0(long jarg1, G2Element jarg1_, boolean jarg2);
-  public final static native long G2Element_serializeToArray__SWIG_1(long jarg1, G2Element jarg1_);
   public final static native long G2Element_copy(long jarg1, G2Element jarg1_);
   public final static native boolean objectEquals__SWIG_2(long jarg1, G2Element jarg1_, long jarg2, G2Element jarg2_);
   public final static native long add__SWIG_1(long jarg1, G2Element jarg1_, long jarg2, G2Element jarg2_);
@@ -154,7 +150,6 @@ public class DASHJBLSJNI {
   public final static native long GTElement_unity();
   public final static native void GTElement_serialize__SWIG_0(long jarg1, GTElement jarg1_, byte[] jarg2);
   public final static native byte[] GTElement_serialize__SWIG_1(long jarg1, GTElement jarg1_);
-  public final static native long GTElement_serializeToArray(long jarg1, GTElement jarg1_);
   public final static native boolean objectEquals__SWIG_3(long jarg1, GTElement jarg1_, long jarg2, GTElement jarg2_);
   public final static native long multiply__SWIG_0(long jarg1, GTElement jarg1_, long jarg2, GTElement jarg2_);
   public final static native void delete_GTElement(long jarg1);
@@ -179,8 +174,6 @@ public class DASHJBLSJNI {
   public final static native void PrivateKey_serialize__SWIG_0(long jarg1, PrivateKey jarg1_, byte[] jarg2);
   public final static native byte[] PrivateKey_serialize__SWIG_1(long jarg1, PrivateKey jarg1_, boolean jarg2);
   public final static native byte[] PrivateKey_serialize__SWIG_2(long jarg1, PrivateKey jarg1_);
-  public final static native long PrivateKey_serializeToArray__SWIG_0(long jarg1, PrivateKey jarg1_, boolean jarg2);
-  public final static native long PrivateKey_serializeToArray__SWIG_1(long jarg1, PrivateKey jarg1_);
   public final static native long PrivateKey_signG2__SWIG_0(long jarg1, PrivateKey jarg1_, byte[] jarg2, long jarg3, byte[] jarg4, long jarg5, boolean jarg6);
   public final static native long PrivateKey_signG2__SWIG_1(long jarg1, PrivateKey jarg1_, byte[] jarg2, long jarg3, byte[] jarg4, long jarg5);
   public final static native boolean PrivateKey_hasKeyData(long jarg1, PrivateKey jarg1_);
