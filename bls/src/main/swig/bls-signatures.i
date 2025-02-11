@@ -1,16 +1,16 @@
 %module DASHJBLS
 %{
-#include "bls-signatures/src/bls.hpp"
-#include "bls-signatures/src/chaincode.hpp"
-#include "bls-signatures/src/elements.hpp"
-#include "bls-signatures/src/extendedprivatekey.hpp"
-#include "bls-signatures/src/extendedpublickey.hpp"
-#include "bls-signatures/src/hdkeys.hpp"
-#include "bls-signatures/src/hkdf.hpp"
-#include "bls-signatures/src/privatekey.hpp"
-#include "bls-signatures/src/schemes.hpp"
-#include "bls-signatures/src/threshold.hpp"
-#include "bls-signatures/src/util.hpp"
+#include "bls-signatures/include/dashbls/bls.hpp"
+#include "bls-signatures/include/dashbls/chaincode.hpp"
+#include "bls-signatures/include/dashbls/elements.hpp"
+#include "bls-signatures/include/dashbls/extendedprivatekey.hpp"
+#include "bls-signatures/include/dashbls/extendedpublickey.hpp"
+#include "bls-signatures/include/dashbls/hdkeys.hpp"
+#include "bls-signatures/include/dashbls/hkdf.hpp"
+#include "bls-signatures/include/dashbls/privatekey.hpp"
+#include "bls-signatures/include/dashbls/schemes.hpp"
+#include "bls-signatures/include/dashbls/threshold.hpp"
+#include "bls-signatures/include/dashbls/util.hpp"
 #include "threshold-v1.hpp"
 using namespace bls;
 %}
@@ -221,16 +221,16 @@ namespace bls {
 	}
 }
 
-%include "src/main/cpp/bls-signatures/src/bls.hpp"
-%include "src/main/cpp/bls-signatures/src/chaincode.hpp"
-%include "src/main/cpp/bls-signatures/src/elements.hpp"
-%include "src/main/cpp/bls-signatures/src/privatekey.hpp"
-%include "src/main/cpp/bls-signatures/src/extendedpublickey.hpp"
-%include "src/main/cpp/bls-signatures/src/extendedprivatekey.hpp"
-%include "src/main/cpp/bls-signatures/src/hdkeys.hpp"
-%include "src/main/cpp/bls-signatures/src/hkdf.hpp"
-%include "src/main/cpp/bls-signatures/src/schemes.hpp"
-%include "src/main/cpp/bls-signatures/src/threshold.hpp"
+%include "src/main/cpp/bls-signatures/include/dashbls/bls.hpp"
+%include "src/main/cpp/bls-signatures/include/dashbls/chaincode.hpp"
+%include "src/main/cpp/bls-signatures/include/dashbls/elements.hpp"
+%include "src/main/cpp/bls-signatures/include/dashbls/privatekey.hpp"
+%include "src/main/cpp/bls-signatures/include/dashbls/extendedpublickey.hpp"
+%include "src/main/cpp/bls-signatures/include/dashbls/extendedprivatekey.hpp"
+%include "src/main/cpp/bls-signatures/include/dashbls/hdkeys.hpp"
+%include "src/main/cpp/bls-signatures/include/dashbls/hkdf.hpp"
+%include "src/main/cpp/bls-signatures/include/dashbls/schemes.hpp"
+%include "src/main/cpp/bls-signatures/include/dashbls/threshold.hpp"
 %include "src/main/cpp/threshold-v1.hpp"
 
 
