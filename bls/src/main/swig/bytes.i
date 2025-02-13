@@ -10,7 +10,7 @@
  * ----------------------------------------------------------------------------- */
 
 %{
-#include "bls-signatures/src/util.hpp"
+#include "bls-signatures/include/dashbls/util.hpp"
 %}
 
 namespace bls {

@@ -6,7 +6,7 @@ import org.slf4j.LoggerFactory;
 public class BLSJniLibrary {
     private static final Logger log = LoggerFactory.getLogger(BLSJniLibrary.class);
     public static String LIBRARY_NAME = "dashjbls";
-    public static String VERSION = "1.2.5-SNAPSHOT";
+    public static String VERSION = "1.3.5-SNAPSHOT";
 
     static private boolean isLibraryLoaded = false;
 

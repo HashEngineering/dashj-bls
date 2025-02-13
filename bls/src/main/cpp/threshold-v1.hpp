@@ -1,7 +1,7 @@
 #ifndef DASHJ_BLS_THRESHOLD_HPP
 #define DASHJ_BLS_THRESHOLD_HPP
 
-#include "bls-signatures/src/threshold.hpp"
+#include "bls-signatures/include/dashbls/threshold.hpp"
 #include <stdint.h>
 
 using namespace std;

@@ -7,11 +7,12 @@ cmake_minimum_required(VERSION 3.14.0)
 set(CMAKE_CXX_STANDARD 14)
 
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
-set(CMAKE_CXX_FLAGS, "-fpermissive")
+set(CMAKE_CXX_FLAGS "-fpermissive")
+set(MI_LOCAL_DYNAMIC_TLS ON CACHE BOOL "Use dlopen-compatible TLS mechanism")
 add_library( # Sets the name of the library.
         dashjbls
         # Sets the library as a shared library.
-       SHARED
+        SHARED
         # Provides a relative path to your source file(s).
         src/main/cpp/bls-signatures-v1.cpp
         src/main/cpp/threshold-v1.cpp
@@ -46,7 +47,8 @@ target_link_libraries( # Specifies the target library.
         dashjbls
 
         # Links the target library to the bls library
-        bls-dash)
+        dashbls
+)
 
 # import the bls-signature project as is
 add_subdirectory(src/main/cpp/bls-signatures)
